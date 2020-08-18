@@ -41,8 +41,8 @@ const long double NFP_TRANSLATOR_COF = 1e4;
 const long double INITIAL_STOCK_LENGTH = 100000000;
 const int MAXIMUM_ITERATIONS_FOR_LOCAL_MINIMA = 50;
 const long double LENGTH_INCREASING_RATE = 0.01;
-const long double LENGTH_DECREASING_RATE = 0.04;
-const vector<long double> ALLOWABLE_ROTATIONS = {0, 90, 180, 270};
+const long double LENGTH_DECREASING_RATE = 0.05;
+const vector<long double> ALLOWABLE_ROTATIONS = {0};//, 90, 180, 270};
 
 static int frameno;
 
