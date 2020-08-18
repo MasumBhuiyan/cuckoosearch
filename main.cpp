@@ -788,7 +788,7 @@ namespace cp
 
 				Point bestLocation(INF, INF);
 				long double bestRotationAngle = 0.0;
-				std::cout << "iteration@" << it << " Polygon@" << i + 1 << "/" << numberOfPolygons << " penalty@before@" << overlapPenalty << " "; 
+				std::cout << "iteration@" << it << " Polygon@" << i + 1 << "/" << numberOfPolygons << " penalty@before@" << overlapPenalty << "\n"; 
 				for (long double rotationAngle : allowableRoatations)
 				{
 					Point translationPoint = cs::cuckooSearch(packing, penalty, Q[i], rotationAngle, width, length);
@@ -883,7 +883,7 @@ namespace cp
 			{
 				break;
 			}
-			visualize(currentPacking, "./dighe1/", "minimized");
+			visualize(currentPacking, "./", "minimized");
 			if (isFeasible(currentPacking, totalAreaOfInitialPackingPolygons))
 			{
 				long double currentAccuracy = getPackingDensity(currentPacking);
